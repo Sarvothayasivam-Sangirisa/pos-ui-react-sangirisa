@@ -40,7 +40,7 @@ const AddForm = ({ onClose }) => {
       <div className="bg-white rounded-lg w-full max-w-4xl border-2 border-green-400 shadow-xl flex flex-col" style={{ maxHeight: '90vh' }}>
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 border-b border-gray-200 bg-white sticky top-0 z-10">
           <h2 className="text-lg font-semibold text-gray-800">Add New Product</h2>
-          <button className="bg-red-500 hover:bg-red-600 text-white text-xs px-3 py-1.5 rounded flex items-center gap-1.5 font-medium mt-2 sm:mt-0">
+          <button className="bg-orange-500 hover:bg-red-600 text-white text-xs px-3 py-1.5 rounded flex items-center gap-1.5 font-medium mt-2 sm:mt-0">
            
             Scan Barcode
           </button>
