@@ -1,10 +1,5 @@
 import {
   FiHome,
-  FiUsers,
-  FiFileText,
-  FiSettings,
-  FiLogOut,
-  FiHelpCircle,
   FiArrowLeft,
   FiArrowRight,
 } from "react-icons/fi";
@@ -12,6 +7,13 @@ import { BsBoxes } from "react-icons/bs";
 import { LiaBoxesSolid } from "react-icons/lia";
 import { PiUserCircleGear, PiHandshakeBold } from "react-icons/pi";
 import { FaBoxOpen } from "react-icons/fa";
+import { ImExit } from "react-icons/im";
+import { IoIosHelpCircle } from "react-icons/io";
+import { BsPeopleFill } from "react-icons/bs";
+import { BsGearFill } from "react-icons/bs";
+import { IoIosListBox } from "react-icons/io";
+
+
 
 const Menu = ({ currentPage, onPageChange }) => {
   const topItems = [
@@ -20,15 +22,15 @@ const Menu = ({ currentPage, onPageChange }) => {
     { id: "products", label: "Products", icon: BsBoxes },
     { id: "utilities", label: "Utilities", icon: PiUserCircleGear },
     { id: "stocks", label: "Stocks", icon: LiaBoxesSolid },
-    { id: "reports", label: "Reports", icon: FiFileText },
-    { id: "users", label: "Users", icon: FiUsers },
+    { id: "reports", label: "Reports", icon: IoIosListBox },
+    { id: "users", label: "Users", icon: BsPeopleFill },
     { id: "suppliers", label: "Suppliers", icon: PiHandshakeBold },
-    { id: "settings", label: "Settings", icon: FiSettings },
+    { id: "settings", label: "Settings", icon: BsGearFill },
   ];
 
   const bottomItems = [
-    { id: "exit", label: "Exit", icon: FiLogOut, color: "text-red-500" },
-    { id: "help", label: "Help", icon: FiHelpCircle },
+    { id: "exit", label: "Exit", icon: ImExit, color: "text-red-500" },
+    { id: "help", label: "Help", icon: IoIosHelpCircle },
   ];
 
   return (
